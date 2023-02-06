@@ -1,0 +1,47 @@
+.navigator {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+  padding: 3px 20px;
+}
+.navigator .link {
+  color: rgb(232, 101, 7);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.navigator .link_active {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.link_devision {
+  color: rgb(255, 213, 0);
+  padding: 0 5px;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+  display: flex;
+  padding: 020px;
+}
+.container > div {
+  width: 50%;
+}
+h2 {
+  color: rgb(110, 106, 106);
+  text-align: center;
+}
+h3 {
+  color: rgb(87, 85, 85);
+  text-align: left;
+}
+.contacts_wrapper {
+  padding: 10px;
+}
+.contacts_wrapper a,
+.contacts_wrapper p {
+  color: rgb(118, 62, 62);
+  padding: 0 10px;
+  font-size: 16px;
+}

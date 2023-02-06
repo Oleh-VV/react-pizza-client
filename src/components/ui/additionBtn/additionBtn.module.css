@@ -1,0 +1,27 @@
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  display: flex;
+
+  align-items: center;
+}
+.btn_icon {
+  color: rgb(232, 101, 7);
+  font-size: 30px;
+  transition: all ease-in-out 0.25s;
+}
+.btn_icon:hover {
+  color: rgb(239, 231, 6);
+  font-size: 30px;
+}
+.btn_wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.addition {
+  color: rgb(241, 88, 6);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}

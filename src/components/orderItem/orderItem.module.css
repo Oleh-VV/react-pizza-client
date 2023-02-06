@@ -1,0 +1,32 @@
+.item_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.item_image_wrapper {
+  max-width: 10%;
+}
+.item_name,
+.item_amount,
+.price_wrapper {
+  font-size: 28px;
+  color: #a80606bd;
+}
+.price_wrapper {
+  width: 150px;
+}
+.item_name {
+  width: 50%;
+}
+.amountBtns_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.orderBtn_icon {
+  color: rgb(249, 120, 7);
+  font-size: 26px;
+  cursor: pointer;
+}

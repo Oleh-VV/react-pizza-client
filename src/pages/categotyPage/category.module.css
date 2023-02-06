@@ -1,0 +1,28 @@
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px auto 50px;
+  width: 90%;
+  gap: 20px;
+}
+.navigator {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+  padding: 3px 20px;
+}
+.navigator .link {
+  color: rgb(232, 101, 7);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.navigator .link_active {
+  color: rgba(255, 255, 255, 0.733);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.link_devision {
+  color: rgb(255, 213, 0);
+  padding: 0 5px;
+}

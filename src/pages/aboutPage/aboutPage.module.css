@@ -1,0 +1,52 @@
+.navigator {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+  padding: 3px 20px;
+}
+.navigator .link {
+  color: rgb(232, 101, 7);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.navigator .link_active {
+  color: rgba(255, 255, 255, 0.733);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.link_devision {
+  color: rgb(255, 213, 0);
+  padding: 0 5px;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+}
+.image_wrapper {
+  width: 80%;
+  margin: 0 auto 20px;
+  padding: 20px;
+}
+.image_wrapper img {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  color: rgb(82, 45, 45);
+}
+.container h3 {
+  font-size: 20px;
+  color: rgb(75, 66, 66);
+  text-align: center;
+  padding-bottom: 5px;
+}
+p {
+  font-size: 20px;
+  color: rgb(118, 62, 62);
+  padding: 5px 50px;
+}
+.logo_wrapper {
+  display: flex;
+  justify-content: center;
+}

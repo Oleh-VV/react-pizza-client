@@ -1,0 +1,66 @@
+.inactive {
+  display: block;
+}
+.inactive {
+  display: none;
+}
+.modal_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0vw;
+  left: 0vh;
+  background-color: rgba(241, 238, 177, 0.5);
+  z-index: 1000;
+}
+.modal_wrapper {
+  margin: 25vh auto;
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(248, 214, 150);
+}
+.modal_text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(107, 66, 3);
+  text-align: center;
+  padding-top: 50px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.btn {
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  min-width: 100px;
+  border: 2px solid rgb(224, 122, 6);
+  color: rgb(130, 39, 5);
+  font-weight: 600;
+  background-color: rgb(219, 157, 32);
+  background-image: radial-gradient(
+    rgb(246, 210, 137),
+    rgb(249, 227, 101),
+    rgb(252, 203, 107)
+  );
+  transition: all ease-in-out 0.25s;
+}
+.btn:hover,
+.btn:focus {
+  outline: none;
+  cursor: pointer;
+  border: 2px solid rgb(176, 176, 5);
+  background-image: radial-gradient(
+    rgb(216, 171, 79),
+    rgb(212, 189, 59),
+    rgb(219, 157, 32)
+  );
+}

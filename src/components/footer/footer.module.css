@@ -1,0 +1,60 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgb(134, 132, 132);
+}
+.contact_icon {
+  color: rgb(218, 198, 12);
+  font-size: 18px;
+}
+.footer_contacts div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_contacts a {
+  font-size: 18px;
+  color: rgb(232, 225, 225);
+  text-shadow: 1px 1px rgba(46, 46, 45, 0.5), -1px -1px rgba(49, 40, 21, 0.5);
+}
+.footer_contacts a:hover {
+  color: brown;
+  text-shadow: 1px 1px rgba(247, 247, 242, 0.2);
+}
+.footer_icons_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_icon {
+  font-size: 30px;
+  color: rgb(224, 202, 8);
+  margin: 0 20px;
+}
+.footer_icon:hover {
+  cursor: pointer;
+  color: rgb(249, 228, 36);
+}
+.footer_rights {
+  display: flex;
+  gap: 5px;
+  color: rgb(131, 38, 5);
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer_rights span {
+  font-family: "Dancing Script", Brush Script MT, cursive;
+  font-size: 22px;
+  color: yellow;
+  border: 2px solid black;
+  border-radius: 25px;
+  outline: 1px solid yellow;
+  text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  padding: 0.1rem 0.7rem;
+}
+.footer_rights span:hover {
+  background-color: yellow;
+  color: black;
+  text-shadow: 0 0 0 black;
+}

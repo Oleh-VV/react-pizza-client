@@ -1,0 +1,17 @@
+.nav_wrapper {
+  display: flex;
+}
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.nav_list_item .nav_list_link {
+  color: rgb(239, 216, 10);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(215, 148, 5), -1px -1px rgb(149, 107, 18);
+}
+.nav_list_link:hover {
+  color: brown;
+}

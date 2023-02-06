@@ -1,0 +1,17 @@
+.logo_wrapper {
+  position: relative;
+}
+.pizzaLetters {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  color: yellow;
+  text-shadow: 2px 2px 1px rgb(6, 60, 236), -1px -1px rgb(6, 60, 236);
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Caveat", cursive;
+}
+.pizzaIcon {
+  font-size: 70px;
+  color: darkorange;
+}

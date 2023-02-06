@@ -1,0 +1,47 @@
+.navigator {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+  padding: 3px 20px;
+}
+.navigator .link {
+  color: rgb(232, 101, 7);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.navigator .link_active {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  cursor: default;
+}
+.link_devision {
+  color: rgb(255, 213, 0);
+  padding: 0 5px;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(196, 191, 191);
+  display: flex;
+  flex: 1;
+}
+.image_wrapper {
+  width: 40%;
+  padding: 20px;
+}
+.image_wrapper img {
+  width: 100%;
+}
+.product_description {
+  width: 50%;
+  padding: 20px;
+}
+h4 {
+  font-size: 20px;
+  color: rgb(75, 74, 74);
+}
+p {
+  font-size: 18px;
+  color: rgb(118, 62, 62);
+}

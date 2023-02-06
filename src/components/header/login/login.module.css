@@ -1,0 +1,19 @@
+.login_wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: white;
+}
+.login {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  text-shadow: 1px 1px 1px rgb(46, 46, 45), -1px -1px rgb(149, 107, 18);
+}
+.login:hover {
+  color: rgb(222, 21, 21);
+}
+.login_icon {
+  color: rgb(239, 232, 232);
+  margin-top: 3px;
+}

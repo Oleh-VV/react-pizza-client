@@ -1,0 +1,19 @@
+.category_wrapper {
+  width: 300px;
+  padding: 5px;
+  position: relative;
+}
+.category_img {
+  border-radius: 10px;
+}
+.category_title {
+  position: absolute;
+  top: 20px;
+  color: yellow;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Sofia Sans", sans-serif;
+  font-style: italic;
+  width: 95%;
+  text-align: center;
+}
