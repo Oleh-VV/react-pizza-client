@@ -1,1 +1,4 @@
-/ https://pizza-react-server-production.up.railway.app/
+from: /
+to: https://pizza-react-server-production.up.railway.app/
+#from: /api/products/product/
+#to: https://pizza-react-server-production.up.railway.app/api/products/product/

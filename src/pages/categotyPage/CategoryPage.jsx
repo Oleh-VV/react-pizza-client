@@ -8,7 +8,9 @@ function CategoryPage() {
   const category = useParams().categoryName;
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch(`/api/products/category/${category}`)
+    fetch(
+      `https://pizza-react-server-production.up.railway.app/api/products/category/${category}`
+    )
       .then((response) => response.json())
       .then((data) => {
         if (data.length === 0) {

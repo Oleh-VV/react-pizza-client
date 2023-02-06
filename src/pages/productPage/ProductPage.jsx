@@ -10,7 +10,7 @@ function ProductPage() {
   const id = useParams().productName;
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/product/${id}`)
+    fetch(`/api/products/product/${id}`)
       .then((response) => response.json())
       .then((data) => {
         if (!data) {
