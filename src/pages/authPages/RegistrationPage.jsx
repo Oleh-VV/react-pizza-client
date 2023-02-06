@@ -46,7 +46,10 @@ function RegistrationPage() {
       return toast.error("Enter correct phone number.");
     }
     axios
-      .post("/api/auth/registration", { ...formData })
+      .post(
+        "https://pizza-react-server-production.up.railway.app/api/auth/registration",
+        { ...formData }
+      )
       .then((response) => {
         Object.entries(response.data).map((item) =>
           localStorage.setItem(item[0], item[1])

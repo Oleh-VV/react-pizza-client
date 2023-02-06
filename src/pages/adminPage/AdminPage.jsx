@@ -35,10 +35,13 @@ function AdminPage() {
     //formData.append("my_file", imageFile);
 
     axios
-      .post("/api/upload/product", {
-        headers: { "Content-Type": "multipart/form-data" },
-        data: formProductData,
-      })
+      .post(
+        "https://pizza-react-server-production.up.railway.app/api/upload/product",
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+          data: formProductData,
+        }
+      )
       .then((response) => {
         console.log(response.data);
         setFormProductData(resetProductData);

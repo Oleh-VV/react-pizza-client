@@ -23,7 +23,10 @@ function LoginPage() {
       return toast.error("Password must be at least 6 symbols!");
     }
     axios
-      .post("/api/auth/login", { ...formData })
+      .post(
+        "https://pizza-react-server-production.up.railway.app/api/auth/login",
+        { ...formData }
+      )
       .then((response) => {
         Object.entries(response.data).map((item) =>
           localStorage.setItem(item[0], item[1])

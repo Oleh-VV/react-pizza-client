@@ -10,7 +10,9 @@ function ProductPage() {
   const id = useParams().productName;
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(`/api/products/product/${id}`)
+    fetch(
+      `https://pizza-react-server-production.up.railway.app/api/products/product/${id}`
+    )
       .then((response) => response.json())
       .then((data) => {
         if (!data) {
