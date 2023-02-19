@@ -35,8 +35,8 @@ function DropdownMenuUser({ title }) {
       >
         <ul>
           <li className={styles.dropdownItem} onClick={dropDown}>
-            <Link className={styles.dropdownLink} to="/accaunt">
-              Accaunt
+            <Link className={styles.dropdownLink} to="/account">
+              Account
             </Link>
           </li>
           <li className={styles.dropdownItem}>

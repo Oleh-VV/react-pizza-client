@@ -13,7 +13,7 @@ import RegistrationPage from "./pages/authPages/RegistrationPage";
 import OrderPage from "./pages/orderPage/OrderPage";
 import NotFoundPage from "./pages/notFoundPage/NotFoundPage";
 import AdminPage from "./pages/adminPage/AdminPage";
-import AccauntPage from "./pages/authPages/AccauntPage";
+import AccountPage from "./pages/authPages/AccountPage";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
-          <Route path="/accaunt" element={<AccauntPage />} />
+          <Route path="/account" element={<AccountPage />} />
           <Route path="/order" element={<OrderPage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="*" element={<NotFoundPage />} />

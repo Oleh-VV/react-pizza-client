@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { AppContext } from "../../contexts/AppContext";
+import { BASE_URL } from "../../constants";
 import styles from "./auth.module.css";
 
 function LoginPage() {
@@ -23,10 +24,7 @@ function LoginPage() {
       return toast.error("Password must be at least 6 symbols!");
     }
     axios
-      .post(
-        "https://pizza-react-server-production.up.railway.app/api/auth/login",
-        { ...formData }
-      )
+      .post(BASE_URL + "/api/auth/login", { ...formData })
       .then((response) => {
         Object.entries(response.data).map((item) =>
           localStorage.setItem(item[0], item[1])
@@ -85,7 +83,7 @@ function LoginPage() {
         </div>
       </form>
       <Link to="/registration">
-        <p>If you don't have an accaunt yet, click here!</p>
+        <p>If you don't have an account yet, click here!</p>
       </Link>
     </div>
   );

@@ -84,3 +84,13 @@
   color: rgb(206, 73, 15);
   text-decoration-line: underline;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}

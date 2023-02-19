@@ -45,8 +45,20 @@ p {
   font-size: 20px;
   color: rgb(118, 62, 62);
   padding: 5px 50px;
+  text-align: justify;
 }
 .logo_wrapper {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  .navigator,
+  .container,
+  .image_wrapper {
+    width: 95%;
+  }
+  .container p {
+    font-size: 1rem;
+    padding: 5px 20px;
+  }
 }

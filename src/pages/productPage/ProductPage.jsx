@@ -2,6 +2,7 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./productPage.module.css";
 import no_photo from "../../assets/no_photo.png";
+import { BASE_URL } from "../../constants";
 //import AdditionBtn from "../../components/ui/additionBtn/AdditionBtn";
 import ToCartBtn from "../../components/ui/toCartBtn/ToCartBtn";
 
@@ -10,9 +11,7 @@ function ProductPage() {
   const id = useParams().productName;
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(
-      `https://pizza-react-server-production.up.railway.app/api/products/product/${id}`
-    )
+    fetch(`${BASE_URL}/api/products/product/${id}`)
       .then((response) => response.json())
       .then((data) => {
         if (!data) {
@@ -20,8 +19,7 @@ function ProductPage() {
         } else setProduct(data[0]);
       })
       .catch((e) => console.log(e));
-  }, [id, navigate]); //Why navigate???????
-
+  }, [id, navigate]);
   return (
     <>
       <div className={styles.navigator}>
@@ -63,7 +61,9 @@ function ProductPage() {
           <h4>Price:</h4>
           <p className={styles.consists}>{`${product.price} UAH`}</p>
           {/* <AdditionBtn />*/}
-          <ToCartBtn product={product} />
+          <div className={styles.btn_wrapper}>
+            <ToCartBtn product={product} />
+          </div>
         </div>
       </div>
     </>

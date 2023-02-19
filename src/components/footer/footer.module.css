@@ -58,3 +58,43 @@ footer {
   color: black;
   text-shadow: 0 0 0 black;
 }
+@media screen and (max-width: 700px) {
+  .footer_rights {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_rights p,
+  .footer_rights span,
+  .footer_contacts a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    flex-wrap: wrap;
+  }
+  .footer_rights {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer_rights p {
+    padding: 0px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer_rights {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+  }
+  .footer_rights p,
+  .footer_rights span,
+  .footer_contacts a {
+    font-size: 1.2rem;
+  }
+}

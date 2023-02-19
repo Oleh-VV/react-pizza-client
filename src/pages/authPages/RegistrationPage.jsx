@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { AppContext } from "../../contexts/AppContext";
+import { BASE_URL } from "../../constants";
 import styles from "./auth.module.css";
 
 function RegistrationPage() {
@@ -46,10 +47,7 @@ function RegistrationPage() {
       return toast.error("Enter correct phone number.");
     }
     axios
-      .post(
-        "https://pizza-react-server-production.up.railway.app/api/auth/registration",
-        { ...formData }
-      )
+      .post(BASE_URL + "/api/auth/registration", { ...formData })
       .then((response) => {
         Object.entries(response.data).map((item) =>
           localStorage.setItem(item[0], item[1])
@@ -161,7 +159,7 @@ function RegistrationPage() {
         </div>
       </form>
       <Link to="/login">
-        <p>If you already have an accaunt, click here!</p>
+        <p>If you already have an account, click here!</p>
       </Link>
     </div>
   );

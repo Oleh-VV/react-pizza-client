@@ -9,7 +9,7 @@
   gap: 20px;
   align-items: center;
 }
-.lang_wrapper {
+.login_wrapper {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -33,4 +33,18 @@ div .lang_link_active {
   justify-content: space-between;
   align-items: center;
   padding: 5px 70px;
+}
+@media screen and (max-width: 650px) {
+  .phone_wrapper {
+    display: none;
+  }
+  .top_bar {
+    justify-content: right;
+  }
+  .login_wrapper {
+    margin-right: 50px;
+  }
+  .main_bar {
+    padding: 5px 30px;
+  }
 }

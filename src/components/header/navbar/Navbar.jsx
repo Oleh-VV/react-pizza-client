@@ -5,10 +5,11 @@ import Logo from "../logo/Logo";
 import NavList from "../nav/navList/NavList";
 import Cart from "../cart/Cart";
 import Login from "../login/Login";
+import DropdownNavSmall from "../nav/dropdownNavSmall/DropdownNavSmall";
 
 function Navbar() {
   return (
-    <div className={styles.container}>
+    <nav>
       <div className={styles.top_bar}>
         <div className={styles.phone_wrapper}>
           <div className={styles.phone_link_wrapper}>
@@ -24,8 +25,7 @@ function Navbar() {
             </a>
           </div>
         </div>
-        <div className={styles.lang_wrapper}>
-          {" "}
+        <div className={styles.login_wrapper}>
           <Login />
         </div>
       </div>
@@ -35,8 +35,9 @@ function Navbar() {
         </Link>
         <NavList />
         <Cart />
+        <DropdownNavSmall />
       </div>
-    </div>
+    </nav>
   );
 }
 

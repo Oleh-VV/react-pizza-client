@@ -16,7 +16,6 @@
   z-index: 1;
   cursor: pointer;
 }
-
 .leftArrow {
   position: absolute;
   top: 50%;
@@ -27,7 +26,6 @@
   z-index: 1;
   cursor: pointer;
 }
-
 .slider {
   position: relative;
   width: 80%;
@@ -63,4 +61,18 @@
   height: 20px;
   border-radius: 50%;
   background-color: blue;
+}
+@media screen and (max-width: 600px) {
+  .slider {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    height: 200px;
+  }
+  .leftArrow,
+  .rightArrow {
+    font-size: 25px;
+  }
 }

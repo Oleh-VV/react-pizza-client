@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
+  gap: 10px;
 }
 .item_image_wrapper {
   max-width: 10%;
@@ -15,6 +16,7 @@
 }
 .price_wrapper {
   width: 150px;
+  text-align: center;
 }
 .item_name {
   width: 50%;
@@ -25,8 +27,49 @@
   align-items: center;
   cursor: pointer;
 }
-.orderBtn_icon {
+.orderBtn_icon,
+.orderBtnDlete_icon {
   color: rgb(249, 120, 7);
   font-size: 26px;
   cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .amountBtns_wrapper {
+    gap: 5px;
+  }
+  .item_name,
+  .item_amount,
+  .price_wrapper,
+  .orderBtn_icon {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .item_wrapper {
+    padding: 10px;
+  }
+  .item_name,
+  .item_amount,
+  .price_wrapper,
+  .orderBtn_icon {
+    font-size: 1.2rem;
+  }
+  .price_wrapper {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .item_name {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .item_amount,
+  .price_wrapper,
+  .orderBtn_icon {
+    font-size: 1rem;
+  }
+  .orderBtnDlete_icon {
+    font-size: 1.8rem;
+  }
 }

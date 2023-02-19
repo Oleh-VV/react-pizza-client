@@ -15,3 +15,8 @@
 .nav_list_link:hover {
   color: brown;
 }
+@media screen and (max-width: 650px) {
+  .nav_wrapper {
+    display: none;
+  }
+}

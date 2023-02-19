@@ -123,3 +123,24 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 650px) {
+  .cart_icon {
+    font-size: 36px;
+  }
+  .cart_icon_wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cart_popup_wrapper {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cart_popup_wrapper {
+    right: -60px;
+  }
+}

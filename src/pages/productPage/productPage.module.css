@@ -34,8 +34,12 @@
   width: 100%;
 }
 .product_description {
-  width: 50%;
+  width: 60%;
   padding: 20px;
+}
+.product_description p {
+  padding: 10px 0px;
+  text-align: justify;
 }
 h4 {
   font-size: 20px;
@@ -44,4 +48,92 @@ h4 {
 p {
   font-size: 18px;
   color: rgb(118, 62, 62);
+}
+
+@media screen and (max-width: 800px) {
+  .navigator .link,
+  .navigator .link_active {
+    font-size: 1.5rem;
+  }
+  .container {
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .navigator {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .image_wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .product_description p {
+    font-size: 1.2rem;
+    padding: 2%;
+  }
+  .product_description {
+    width: 95%;
+    padding: 10px;
+  }
+  h4 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .product_description p {
+    font-size: 1rem;
+    padding: 2% 5%;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navigator {
+    width: 95%;
+    margin: 10px auto;
+    padding: 3px 10px;
+  }
+  .navigator .link,
+  .navigator .link_active {
+    font-size: 1.2rem;
+  }
+  .container {
+    width: 95%;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+  .image_wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .product_description p {
+    font-size: 1rem;
+    padding: 2% 5%;
+  }
+  .btn_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .product_description {
+    width: 95%;
+    padding: 10px;
+  }
+  h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navigator .link,
+  .navigator .link_active {
+    font-size: 1rem;
+  }
+  .image_wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
 }

@@ -44,7 +44,7 @@ function OrderItem({ dispatchCart, item }) {
         <span>{item.amount * item.price} UAH</span>
       </div>
       <IoMdCloseCircleOutline
-        className={styles.orderBtn_icon}
+        className={styles.orderBtnDlete_icon}
         onClick={() => removeCartItem(item.id)}
       />
     </div>

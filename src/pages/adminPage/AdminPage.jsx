@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { BASE_URL } from "../../constants";
 import styles from "./adminPage.module.css";
 import axios from "axios";
 
@@ -35,13 +36,10 @@ function AdminPage() {
     //formData.append("my_file", imageFile);
 
     axios
-      .post(
-        "https://pizza-react-server-production.up.railway.app/api/upload/product",
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-          data: formProductData,
-        }
-      )
+      .post(BASE_URL + "/api/upload/product", {
+        headers: { "Content-Type": "multipart/form-data" },
+        data: formProductData,
+      })
       .then((response) => {
         console.log(response.data);
         setFormProductData(resetProductData);

@@ -2,15 +2,14 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import styles from "./category.module.css";
 import Product from "../../components/product/Product";
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../../constants";
 
 function CategoryPage() {
   const navigate = useNavigate();
   const category = useParams().categoryName;
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch(
-      `https://pizza-react-server-production.up.railway.app/api/products/category/${category}`
-    )
+    fetch(`${BASE_URL}/api/products/category/${category}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.length === 0) {

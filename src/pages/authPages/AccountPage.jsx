@@ -2,9 +2,10 @@ import { useState, useContext } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { AppContext } from "../../contexts/AppContext";
+import { BASE_URL } from "../../constants";
 import styles from "./auth.module.css";
 
-function AccauntPage() {
+function AccountPage() {
   const { userState, dispatchUser } = useContext(AppContext);
   let userData = {
     email: "",
@@ -39,10 +40,7 @@ function AccauntPage() {
       return toast.error("Enter correct phone number.");
     }
     axios
-      .post(
-        "https://pizza-react-server-production.up.railway.app/api/auth/update",
-        { ...formData }
-      )
+      .post(BASE_URL + "/api/auth/update", { ...formData })
       .then((response) => {
         Object.entries(response.data).map((item) =>
           localStorage.setItem(item[0], item[1])
@@ -57,7 +55,7 @@ function AccauntPage() {
   };
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Accaunt</h2>
+      <h2 className={styles.title}>Account</h2>
       <form className={styles.form} onSubmit={onSubmitHandler}>
         <div className={styles.form_element}>
           <label className={styles.label}>Email</label>
@@ -130,4 +128,4 @@ function AccauntPage() {
   );
 }
 
-export default AccauntPage;
+export default AccountPage;
